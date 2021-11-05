@@ -5,7 +5,7 @@ import styles from "./Accordion.module.scss";
 function Accordion({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div className="accordion">
+    <div className={styles.accordion}>
       {items.map((item, index) => {
         return (
           <AccordionItem

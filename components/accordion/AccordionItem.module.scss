@@ -1,5 +1,28 @@
 .item {
-  .wrap {
-    padding: 12px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  min-height: 64px;
+
+  .textWrap {
+    display: inline-flex;
+
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  .content {
+    display: none;
+    margin-left: 16px;
+  }
+
+  &.active {
+    .icon {
+      transform: rotate(90deg);
+    }
+
+    .content {
+      display: block;
+    }
   }
 }
